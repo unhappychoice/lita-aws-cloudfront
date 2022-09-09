@@ -122,9 +122,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rb-readline (0.5.5)
-    redis (5.0.2)
-      redis-client (~> 0.7)
-    redis-client (0.7.1)
+    redis (5.0.3)
+      redis-client (>= 0.7.4)
+    redis-client (0.7.4)
       connection_pool
     redis-namespace (1.9.0)
       redis (>= 4)
