@@ -51,9 +51,9 @@ module Lita
 
       private def client
         Aws::CloudFront::Client.new(
-          region: config.aws_region || ENV['AWS_REGION'],
-          access_key_id: config.aws_access_key_id || ENV['AWS_ACCESS_KEY_ID'],
-          secret_access_key: config.aws_secret_access_key || ENV['AWS_SECRET_ACCESS_KEY']
+          region: config.aws_region || ENV.fetch('AWS_REGION', nil),
+          access_key_id: config.aws_access_key_id || ENV.fetch('AWS_ACCESS_KEY_ID', nil),
+          secret_access_key: config.aws_secret_access_key || ENV.fetch('AWS_SECRET_ACCESS_KEY', nil)
         )
       end
 
