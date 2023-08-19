@@ -46,4 +46,5 @@ jobs:
         env:
           COVERAGE: true
           CODECOV_TOKEN: c8c31078-b811-4301-bd35-c36e14cfc075
+          AWS_REGION: ap-northeast-1
         run: bundle exec rspec
