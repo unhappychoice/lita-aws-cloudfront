@@ -111,9 +111,9 @@ GEM
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.10.1)
+    pry-byebug (3.8.0)
       byebug (~> 11.0)
-      pry (>= 0.13, < 0.15)
+      pry (~> 0.10)
     puma (6.3.1)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -173,6 +173,7 @@ GEM
       rack
 
 PLATFORMS
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -190,4 +191,4 @@ DEPENDENCIES
   simplecov
 
 BUNDLED WITH
-   2.0.2
+   2.4.19
