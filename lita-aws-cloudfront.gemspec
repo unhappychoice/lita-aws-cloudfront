@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name                  = 'lita-aws-cloudfront'
   spec.version               = '0.1.0'
-  spec.required_ruby_version = '>= 2.5'
+  spec.required_ruby_version = '>= 3.0'
   spec.authors               = ['Yuji Ueki']
   spec.email                 = ['unhappychoice@gmail.com']
   spec.description           = 'Lita handler to manage cloud front'
@@ -17,7 +17,9 @@ Gem::Specification.new do |spec|
   spec.require_paths         = ['lib']
 
   spec.add_runtime_dependency 'aws-sdk-cloudfront', '~> 1'
+  spec.add_runtime_dependency 'base64', '>= 0.3'
   spec.add_runtime_dependency 'lita', '>= 4.7'
+  spec.add_runtime_dependency 'nokogiri', '>= 1.17'
 
   spec.add_development_dependency 'bundler', '~> 2'
   spec.add_development_dependency 'codecov'
